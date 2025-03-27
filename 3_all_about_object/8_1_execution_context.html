@@ -1,0 +1,18 @@
+<script>
+    function one() {
+        console.log('run one');
+        console.log('run one');
+    }
+    function two() {
+        console.log('run two');
+        one();
+        console.log('run two');
+    }
+    function three() {
+        console.log('run three');
+        two();
+        console.log('run three');
+    }
+    three();
+</script>
+<!-- Call Stack 이 쌓여서 순차적으로 처리.. -->
