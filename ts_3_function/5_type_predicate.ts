@@ -47,6 +47,6 @@ const doge: DogeOrCat =
 if (isDoge(doge)) {
     doge; // type is Doge
 } else {
-    // 위에서 확률로 도지만 넣었다면 Naver
+    // 위에서 확률로 도지만 넣었다면 never
     doge; // type is Cat
 }

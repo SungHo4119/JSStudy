@@ -93,7 +93,7 @@ type TRectangle = THeight & {
 };
 
 // const recangle: TRectangle = {
-//     height: '100px', // height 가 중복 선언되 었고 string && number 타입은 존재하지 않음으로 Naver 타입이 된다.
+//     height: '100px', // height 가 중복 선언되 었고 string && number 타입은 존재하지 않음으로 never 타입이 된다.
 //     width: 200,
 // };
 
@@ -131,5 +131,5 @@ interface IRectangle2 extends IWidth {
     height: number;
 }
 
-// type의 경우 naver 타입이 나오더라도 extend가 가능하다
-// interface의 경우 naver 타입이 나오는경우 extend가 불가능하다
+// type의 경우 never 타입이 나오더라도 extend가 가능하다
+// interface의 경우 never 타입이 나오는경우 extend가 불가능하다
